@@ -7,7 +7,7 @@ import pandas as pd
 
 class ANIMATION_Collision(object):
     """An animated collision plot using matplotlib.animations.FuncAnimation."""
-    def__init__(self, numpoints, area, e):
+    def __init__(self, numpoints, area, e):
         # 개체 수, 운동 영역
         self.num = numpoints
         self.area = area
@@ -83,7 +83,7 @@ class ANIMATION_Collision(object):
                                 self.DataChange['V_x'][i] = nv1h * np.cos(angle) + v1v * np.sin(angle)
                                 self.DataChange['V_y'][i] = nv1h * np.sin(angle) - v1v * np.cos(angle)
                                 self.DataChange['V_x'][j] = nv2h * np.cos(angle) + v2v * np.sin(angle)
-                                self.DataChange['V_y'][j] = nv2h * np.sin(angle) _ v2v * np.cos(angle)
+                                self.DataChange['V_y'][j] = nv2h * np.sin(angle) - v2v * np.cos(angle)
                                 
             for i in range(self.num):
                 # 위치 업데이트
